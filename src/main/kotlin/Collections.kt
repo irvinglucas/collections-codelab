@@ -20,5 +20,12 @@ fun main() {
     peopleAges["Fred"] = 31
     println(peopleAges)
 
+//    peopleAges.forEach { print("${it.key} is ${it.value}, ") }
+
+    println(peopleAges.map { "${it.key} is ${it.value}" }.joinToString(", "))
+
+    val filteredNames = peopleAges.filter { it.key.length < 4 }
+    println(filteredNames)
+
 
 }
