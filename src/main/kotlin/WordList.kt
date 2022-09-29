@@ -21,4 +21,8 @@ fun main() {
         .shuffled()
         .take(2)
         .sorted())
+
+    println(words.filter { it.startsWith("c", ignoreCase = true) }
+        .shuffled()
+        .take(1))
 }
